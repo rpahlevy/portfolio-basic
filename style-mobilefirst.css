@@ -1,0 +1,16 @@
+body {
+
+}
+
+header {
+
+}
+
+
+@media (min-width: 768px) {
+    /* rule untuk tablet */
+}
+
+@media (min-width: 1024px) {
+    /* rule untuk desktop */
+}
