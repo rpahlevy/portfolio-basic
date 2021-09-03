@@ -25,6 +25,10 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+body.no-scroll {
+    overflow-y: hidden;
+}
+
 header img {
     width: 100%;
     display: block;
@@ -117,6 +121,65 @@ dl dd p {
 
 dl dd {
     margin-bottom: 15px;
+}
+
+.modal-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    top: 0;
+    left: 0;
+    z-index: 200;
+    display: flex;
+    /* justify horizontal */
+    justify-content: center;
+    /* align vertical */
+    align-items: center;
+}
+
+.modal-container.d-none {
+    display: none;
+}
+
+.modal {
+    background-color: white;
+    max-width: 600px;
+}
+
+.modal-header {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.modal-header button {
+    float: right;
+}
+
+.modal-body {
+    clear: both;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+
+.media .media-image {
+    float: left;
+    width: 160px;
+    margin-right: 15px;
+}
+
+.media .media-body h5 {
+    margin-bottom: 0;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    border: none;
+}
+
+.clear-both {
+    clear: both;
 }
 
 footer {

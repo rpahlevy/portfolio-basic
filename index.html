@@ -15,7 +15,8 @@
 <body>
     
     <div>
-        <header>
+        <!-- bisa diseleksi menggunakan document.getElementByName -->
+        <header name="headerx">
             <img src="https://via.placeholder.com/1200x600" alt="Header image">
         </header>
 
@@ -75,7 +76,7 @@
 
             <div id="portfolio-list">
 
-                <div class="portfolio-item">
+                <div class="portfolio-item" onclick="show_modal('modal-website-koperasi')">
                     <div class="portfolio-image-container">
                         <span class="portfolio-badge">BEST</span>
                         <img src="https://via.placeholder.com/600" alt="Portfolio Website Koperasi">
@@ -83,7 +84,7 @@
                     <h3>Website Koperasi</h3>
                 </div>
 
-                <div class="portfolio-item">
+                <div class="portfolio-item" onclick="show_modal('modal-website-ppdb')">
                     <div class="portfolio-image-container">
                         <span class="portfolio-badge">BEST</span>
                         <img src="https://via.placeholder.com/600" alt="Portfolio Website PPDB">
@@ -91,14 +92,14 @@
                     <h3>Website PPDB</h3>
                 </div>
 
-                <div class="portfolio-item">
+                <div class="portfolio-item" onclick="show_modal('modal-absensi-online')">
                     <div class="portfolio-image-container">
                         <img src="https://via.placeholder.com/600" alt="Portfolio Aplikasi Absensi Online">
                     </div>
                     <h3>Aplikasi Absensi Online</h3>
                 </div>
 
-                <div class="portfolio-item">
+                <div class="portfolio-item" onclick="show_modal('modal-resep-nusantara')">
                     <div class="portfolio-image-container">
                         <img src="https://via.placeholder.com/600" alt="Portfolio Aplikasi Resep Nusantara">
                     </div>
@@ -147,6 +148,118 @@
         </footer>
     </div>
 
+    <div id="modal-website-koperasi" class="modal-container d-none" onclick="hide_modal('modal-website-koperasi')">
+        <div class="modal" onclick="stop_propagation()">
+            <div class="modal-header">
+                <button class="btn-transparent" onclick="hide_modal('modal-website-koperasi')">&times;</button>
+                <h3 class="modal-title">Detail Portfolio</h3>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="media">
+                    <img class="media-image" src="https://via.placeholder.com/600" alt="Detail Portfolio">
+                    <div class="media-body">
+                        <h5>Website Koperasi</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vitae ab excepturi nostrum quos dolores voluptates reiciendis optio, odio quas tempore eius voluptate non sit, quasi modi fugit? Voluptatibus, sint!
+                        </p>
+
+                        <hr>
+
+                        <a href="#">https://myportfolio.com/website-koperasi</a>
+                    </div>
+                    <div class="clear-both"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-website-ppdb" class="modal-container d-none" onclick="hide_modal('modal-website-ppdb')">
+        <div class="modal" onclick="stop_propagation()">
+            <div class="modal-header">
+                <button class="btn-transparent" onclick="hide_modal('modal-website-ppdb')">&times;</button>
+                <h3 class="modal-title">Detail Portfolio</h3>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="media">
+                    <img class="media-image" src="https://via.placeholder.com/600" alt="Detail Portfolio">
+                    <div class="media-body">
+                        <h5>Website PPDB</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum a dolore, minus atque minima nihil expedita! Velit vitae corrupti itaque quam sapiente, eum vero quod nostrum. Quasi quidem cumque tempore.
+                        </p>
+
+                        <hr>
+
+                        <a href="#">https://myportfolio.com/website-koperasi</a>
+                    </div>
+                    <div class="clear-both"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-absensi-online" class="modal-container d-none" onclick="hide_modal('modal-absensi-online')">
+        <div class="modal" onclick="stop_propagation()">
+            <div class="modal-header">
+                <button class="btn-transparent" onclick="hide_modal('modal-absensi-online')">&times;</button>
+                <h3 class="modal-title">Detail Portfolio</h3>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="media">
+                    <img class="media-image" src="https://via.placeholder.com/600" alt="Detail Portfolio">
+                    <div class="media-body">
+                        <h5>Aplikasi Absensi Online</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum a dolore, minus atque minima nihil expedita! Velit vitae corrupti itaque quam sapiente, eum vero quod nostrum. Quasi quidem cumque tempore.
+                        </p>
+
+                        <hr>
+
+                        <a href="#">https://myportfolio.com/website-koperasi</a>
+                    </div>
+                    <div class="clear-both"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-resep-nusantara" class="modal-container d-none" onclick="hide_modal('modal-resep-nusantara')">
+        <div class="modal" onclick="stop_propagation()">
+            <div class="modal-header">
+                <button class="btn-transparent" onclick="hide_modal('modal-resep-nusantara')">&times;</button>
+                <h3 class="modal-title">Detail Portfolio</h3>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="media">
+                    <img class="media-image" src="https://via.placeholder.com/600" alt="Detail Portfolio">
+                    <div class="media-body">
+                        <h5>Aplikasi Resep Nusantara</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum a dolore, minus atque minima nihil expedita! Velit vitae corrupti itaque quam sapiente, eum vero quod nostrum. Quasi quidem cumque tempore.
+                        </p>
+
+                        <hr>
+
+                        <a href="#">https://myportfolio.com/website-koperasi</a>
+                    </div>
+                    <div class="clear-both"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <script>
         // https://gist.github.com/andjosh/6764939
         function scrollToElement(to, duration) {
@@ -189,6 +302,28 @@
             t--;
             return -c/2 * (t*(t-2) - 1) + b;
         };
+
+        function show_modal(id_target) {
+            var target = document.getElementById(id_target);
+            target.className = 'modal-container'
+
+            var body = document.querySelector('body')
+            body.className = 'no-scroll'
+        }
+
+        function hide_modal(id_target) {
+            var target = document.getElementById(id_target);
+            target.className = 'modal-container d-none'
+            
+            var body = document.querySelector('body')
+            body.className = ''
+        }
+
+        function stop_propagation() {
+            if (window.event) {
+                window.event.stopPropagation();
+            }
+        }
     </script>
 
 </body>
